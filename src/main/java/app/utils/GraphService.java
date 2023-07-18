@@ -2,7 +2,7 @@
 // Licensed under the MIT license.
 
 // <ImportSnippet>
-package Sharepointworkerapp;
+package app.utils;
 
 import com.azure.core.credential.AccessToken;
 import com.azure.core.credential.TokenRequestContext;
@@ -18,9 +18,7 @@ import com.microsoft.aad.msal4j.ClientCredentialParameters;
 import com.microsoft.aad.msal4j.ConfidentialClientApplication;
 import com.microsoft.aad.msal4j.IAuthenticationResult;
 import com.microsoft.graph.authentication.TokenCredentialAuthProvider;
-import com.microsoft.graph.models.Site;
 import com.microsoft.graph.requests.GraphServiceClient;
-import com.microsoft.graph.requests.UserCollectionPage;
 import com.nimbusds.oauth2.sdk.http.HTTPResponse;
 import okhttp3.Request;
 import org.apache.http.HttpEntity;
@@ -38,7 +36,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 import java.util.Properties;
 import java.util.concurrent.CompletableFuture;
 
